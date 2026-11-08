@@ -1,0 +1,13 @@
+edge-tts==7.3.1
+faster-whisper==1.2.1
+livekit==1.2.0
+mcp==2.3.0
+miniaudio==1.71
+numpy
+nvidia-cudnn-cu12==9.27.0.42
+openwakeword==0.6.0
+PySide6_Essentials==6.12.0
+pywinauto==0.6.9
+scikit-learn
+sherpa_onnx==2.0.1
+sounddevice==0.5.6

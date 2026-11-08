@@ -1,0 +1,23 @@
+# Secrets and personal settings
+.env
+config.local.json
+
+# Voice samples and anything recorded or logged at runtime
+.runtime/
+*.wav
+*.mp3
+*.flac
+*.ogg
+*.m4a
+*.npy
+
+# Models: downloaded weights, and the wake model trained on the owner's voice
+models/
+*.pkl
+*.onnx
+
+# Installed dependencies and caches
+.venv/
+tools/node_modules/
+__pycache__/
+*.pyc

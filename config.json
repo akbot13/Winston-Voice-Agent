@@ -1,0 +1,49 @@
+{
+  "name": "Winston",
+  "user_name": "the user",
+  "workspace": ".",
+  "model": "haiku",
+  "claude_exe": "tools\\node_modules\\@anthropic-ai\\claude-code\\bin\\claude.exe",
+
+  "wake_mode": "openwakeword",
+  "personal_wake_model": "models\\hey_winston.pkl",
+  "personal_wake_threshold": 0.95,
+  "personal_wake_frames": 3,
+  "personal_wake_speaking_threshold": 0.8,
+  "personal_wake_speaking_frames": 2,
+  "personal_wake_min_voiced": 4,
+  "personal_wake_voiced_rms": 100,
+  "wake_words": ["winston", "winstone", "winstons", "win ston", "win stone", "whinston", "wenston", "winsten"],
+  "wake_whisper_model": "base.en",
+  "follow_up_seconds": 0,
+
+  "wake_model": "hey_jarvis",
+  "custom_wake_model": "models\\hey_winston.onnx",
+  "wake_threshold": 0.5,
+
+  "whisper_model": "small.en",
+  "whisper_beam_size": 5,
+  "vocabulary": "Winston, Claude, session.",
+  "whisper_device": "cuda",
+  "whisper_compute_type": "int8_float16",
+
+  "voice": "en-GB-RyanNeural",
+  "voice_rate": "+5%",
+  "elevenlabs": {
+    "enabled": true,
+    "voice_id": "onwK4e9ZLuTAKqWW03F9",
+    "voice_name": "Daniel (British, calm)",
+    "model": "eleven_flash_v2_5"
+  },
+
+  "silence_seconds": 0.8,
+  "max_wait_for_speech": 6.0,
+  "max_utterance_seconds": 25.0,
+
+  "allowed_tools": ["Read", "Glob", "Grep", "LS", "WebSearch", "WebFetch", "Agent", "Task", "TodoWrite",
+                    "mcp__winston__list_claude_sessions", "mcp__winston__open_claude_session",
+                    "mcp__winston__read_claude_session", "mcp__winston__list_windows",
+                    "mcp__winston__focus_window", "mcp__winston__send_to_claude_session",
+                    "mcp__winston__wait_for_claude_reply"],
+  "auto_allow_edits_in_workspace": true
+}
